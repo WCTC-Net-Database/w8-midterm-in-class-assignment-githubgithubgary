@@ -47,5 +47,22 @@
     "Level": 2,
     "HP": 8,
     "Treasure": null
+  },
+  {
+    "$type": "Ghoul",
+    "Name": "Boo Boo Ghoul",
+    "Type": "Ghoul",
+    "Level": 2,
+    "HP": 5,
+    "Treasure": "box"
+  },
+  {
+    "$type": "Cat",
+    "Name": "Kitty",
+    "Type": "Cat",
+    "Level": 1,
+    "HP": 1,
+    "Treasure": "cat nip"
   }
+
 ]

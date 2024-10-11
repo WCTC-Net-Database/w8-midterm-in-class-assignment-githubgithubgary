@@ -5,8 +5,8 @@ namespace W8_assignment_template.Helpers;
 public class MapManager
 {
     private const int RoomNameLength = 5;
-    private const int gridRows = 5;
-    private const int gridCols = 5;
+    private const int gridRows = 8;
+    private const int gridCols = 8;
     private readonly OutputManager _outputManager;
     private readonly string[,] mapGrid;
     private IRoom _currentRoom;
@@ -45,16 +45,16 @@ public class MapManager
                 {
                     if (mapGrid[i, j] == $"[{_currentRoom.Name.Substring(0, RoomNameLength)}]")
                     {
-                        _outputManager.Write($"{mapGrid[i, j],-7}", ConsoleColor.Green);
+                        _outputManager.Write($"{mapGrid[i, j],-10}", ConsoleColor.Green);
                     }
                     else
                     {
-                        _outputManager.Write($"{mapGrid[i, j],-7}");
+                        _outputManager.Write($"{mapGrid[i, j],-10}");
                     }
                 }
                 else
                 {
-                    _outputManager.Write($"{mapGrid[i, j],-7}");
+                    _outputManager.Write($"{mapGrid[i, j],-10}");
                 }
             }
 
